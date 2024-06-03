@@ -62,8 +62,10 @@ const MenuSidebar = () => {
   const menuItemFlat = useAppSelector((state) => state.ui.menuItemFlat);
   const menuChildIndent = useAppSelector((state) => state.ui.menuChildIndent);
 
+  const layoutFixed = useAppSelector((state) => state.ui.layoutFixed);
+
   return (
-    <aside className={`main-sidebar elevation-4 ${sidebarSkin}`}>
+    <aside className={`main-sidebar elevation-4 ${sidebarSkin} `} style={layoutFixed ? {position:'fixed'}: {}}>
       <Link to="/" className="brand-link">
         <StyledBrandImage
           src="img/logo.png"

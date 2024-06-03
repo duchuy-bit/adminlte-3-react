@@ -30,7 +30,7 @@ const Blank = () => {
                 </button>
               </div>
             </div>
-            <div className="card-body">
+            <div className="card-body" style={{height: "1000px"}}>
               Start creating your amazing application!
             </div>
             <div className="card-footer">Footer</div>
